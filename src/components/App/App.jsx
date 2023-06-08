@@ -7,12 +7,14 @@ import Sidebar from "../Sidebar/Sidebar";
 
 import { useDispatch } from "react-redux";
 import { getCategories } from "../../feautures/categories/categoriesSlice"
+import { getProducts } from "../../feautures/products/productsSlice"
 
 const App = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(getCategories());
+    dispatch(getProducts());
   }, [dispatch]);
 
   return (
