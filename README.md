@@ -2,4 +2,4 @@ React
 Redux-toolkit
 Thunk
 
-Application
+Application internet-shop
